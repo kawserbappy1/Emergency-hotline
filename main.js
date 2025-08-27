@@ -59,6 +59,6 @@ for (let card of singleCard) {
 }
 
 // clear history Button
-// getElement("clear-btn").addEventListener("click", function () {
-//   getElement("history").innerHTML = "";
-// });
+getElement("clear-btn").addEventListener("click", function () {
+  getElement("history").innerHTML = "";
+});
