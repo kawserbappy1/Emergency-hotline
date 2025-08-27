@@ -41,20 +41,21 @@ for (let card of singleCard) {
   });
 
   // Copy text and past anywhere
-  // const copyNumber = card.children[3].innerText;
-  // const copyBtn = card.children[5].children[0];
-  // copyBtn.addEventListener("click", function () {
-  //   const copyCount = Number(getElement("copy").innerText);
-  //   navigator.clipboard
-  //     .writeText(copyNumber)
-  //     .then(() => {
-  //       alert(`Copid ${copyNumber}`);
-  //       getElement("copy").innerText = copyCount + 1;
-  //     })
-  //     .catch((err) => {
-  //       alert(`Failed to Copy ${copyNumber}`, err);
-  //     });
-  // });
+
+  const copyNumber = card.children[3].innerText;
+  const copyBtn = card.children[5].children[0];
+  copyBtn.addEventListener("click", function () {
+    const copyCount = Number(getElement("copy").innerText);
+    navigator.clipboard
+      .writeText(copyNumber)
+      .then(() => {
+        alert(`Copid ${copyNumber}`);
+        getElement("copy").innerText = copyCount + 1;
+      })
+      .catch((err) => {
+        alert(`Failed to Copy ${copyNumber}`, err);
+      });
+  });
 }
 
 // clear history Button
