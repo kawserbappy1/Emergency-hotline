@@ -17,6 +17,33 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
+    <!-- nav area start  -->
+    <header class="container py-8 mx-auto">
+      <nav class="flex flex-col md:flex-row md:justify-between gap-8 justify-between items-center">
+        <a href="#" class="logo flex items-center justify-center gap-2">
+          <img class="w-20" src="./assets/logo.png" alt="" />
+          <h1 class="capitalize text-[#006747] text-4xl font-bold md:text-3xl">
+            emergency <br />
+            services
+          </h1>
+        </a>
+        <div class="nav-btn flex gap-1">
+          <button class="btn flex gap-2 bg-[rgba(65,255,107,.1)] border-0 rounded-full px-6 py-4 md:px-11 md:py-8">
+            <span id="heart" class="text-black text-[16px] font-bold md:text-2xl">0</span>
+            <img class="w-8" src="./assets/heart.png" alt="" />
+          </button>
+          <button class="btn flex gap-3 bg-[rgba(65,255,107,.1)] border-0 rounded-full px-6 py-4 md:px-11 md:py-8">
+            <span id="star" class="text-black text-[16px] font-bold md:text-2xl">100</span>
+            <img class="w-8" src="./assets/coin.png" alt="" />
+          </button>
+          <button
+            class="btn flex gap-3 bg-[#00a63e] text-white capitalize border-0 rounded-full px-6 py-4 md:px-11 md:py-8 text-[16px] font-bold md:text-2xl"
+          >
+            <span id="copy">0</span> copy
+          </button>
+        </div>
+      </nav>
+    </header>
     <!-- js file here  -->
     <script src="./main.js"></script>
   </body>
